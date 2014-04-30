@@ -17,7 +17,7 @@ end
 
 describe "Find the triplet" do
   it 'can find the porduct of the three numbers that make up a pythagorean triplet and sum to 1000' do
-    expect(smallest_multiple).to eq(31875000)
+    expect(the_triplet).to eq(31875000)
   end 
 end
  
