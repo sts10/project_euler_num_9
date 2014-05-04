@@ -26,9 +26,8 @@ def find_the_triplet
     2.upto(1000) do |a|
       2.upto(1000) do |b|
         @this_triangle = Triangle.new(a,b)
-        throw :found_it if @this_triangle.qualifies?
+        throw :found_it, @this_triangle.product if @this_triangle.qualifies?
       end
     end 
   end
-  @this_triangle.product
 end 
