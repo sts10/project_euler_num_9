@@ -22,16 +22,13 @@ class Triangle
 end
 
 def find_the_triplet
-  a = 2 
-  while (a < 1000)
-    b = 2
-    while (b < 1000)
-      @this_triangle = Triangle.new(a,b)
-      if @this_triangle.qualifies?
-        return @this_triangle.product
+  catch :found_it do
+    2.upto(1000) do |a|
+      2.upto(1000) do |b|
+        @this_triangle = Triangle.new(a,b)
+        throw :found_it if @this_triangle.qualifies?
       end
-      b = b + 1
-    end
-    a = a + 1
-  end 
+    end 
+  end
+  @this_triangle.product
 end 
