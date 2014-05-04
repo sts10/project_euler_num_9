@@ -13,7 +13,7 @@ describe 'can recognize triplets' do
 end
 
 describe "Find the triplet" do
-  it 'can find the porduct of the three numbers that make up a pythagorean triplet and sum to 1000' do
+  it 'can find the product of the three numbers that make up a pythagorean triplet and sum to 1000' do
     expect(the_triplet).to eq(31875000)
   end 
 end
