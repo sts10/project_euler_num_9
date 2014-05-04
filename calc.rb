@@ -1,5 +1,5 @@
 class Triangle 
-  attr_reader :a, :b, :c, :product
+  attr_reader :product
 
   def initialize(a,b)
     @a = a
@@ -34,5 +34,4 @@ def find_the_triplet
     end
     a = a + 1
   end 
-
 end 
