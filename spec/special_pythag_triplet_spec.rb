@@ -13,7 +13,6 @@ describe 'can recognize triplets' do
 
     expect(@failing_triangle.makes_triplet?).to be(false)
   end
-
 end
 
 describe "Find the triplet" do
