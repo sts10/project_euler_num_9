@@ -22,21 +22,12 @@ class Triangle
 end
 
 def find_the_triplet
-  # catch :found_it do
-  #   2.upto(1000) do |a|
-  #     2.upto(1000) do |b|
-  #       @this_triangle = Triangle.new(a,b)
-  #       throw :found_it, @this_triangle.product if @this_triangle.qualifies?
-  #     end
-  #   end 
-  # end
-
-
   (2..1000).detect do |a|
     (2..1000).detect do |b|
       @this_triangle = Triangle.new(a,b)
       @this_triangle.qualifies?
     end
   end
+  
   @this_triangle.product
 end 
